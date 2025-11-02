@@ -464,7 +464,7 @@ export default function App() {
       </div>
 
       <footer className="footer">
-        <div>Made with ♥ · Tria UI practice · <small className="muted">Not for submission where AI is disallowed</small></div>
+        <div>Made with ♥ · Tria UI practice · </div>
       </footer>
 
       {/* modals */}
