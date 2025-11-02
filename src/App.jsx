@@ -17,7 +17,7 @@ const TRASH_EXPIRE_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 /* ---- utilities ---- */
 function getSampleContacts() {
   const seed = [
-    { id: 1, name: "Vansh Arora", email: "vansharora665@gmail.com", country: "+91", phone: "9589290528", role: "Engineering", photo: "" },
+    { id: 1, name: "Aisha Khan", email: "aisha.khan@example.com", country: "+91", phone: "9876543210", role: "Product", photo: "" },
     { id: 2, name: "Ravi Patel", email: "ravi.patel@example.com", country: "+91", phone: "9123456789", role: "Engineering", photo: "" },
     { id: 3, name: "Emily Johnson", email: "emily.johnson@example.com", country: "+1", phone: "5551234567", role: "Design", photo: "" },
   ];
@@ -101,7 +101,7 @@ function TopBar({ onCreate, trashCount, onOpenTrash }) {
 }
 
 function SideNav({ activeTeam, setActiveTeam }) {
-  const teams = ["All", "Product", "Engineering", "Design", "Marketing"];
+  const teams = ["All", "Faculty", "Engineering", "Design", "Staff"];
   return (
     <aside className="sidebar">
       <div className="sidebar__card">
@@ -241,7 +241,7 @@ function ContactEditor({ initial = null, onCancel, onSave }) {
           </select>
           <input className="input" placeholder="Phone digits only" value={phone} onChange={(e) => setPhone(e.target.value.replace(/\D/g, ""))} />
         </div>
-        <input className="input" placeholder="Role (Product / Eng / Design)" value={role} onChange={(e) => setRole(e.target.value)} />
+        <input className="input" placeholder="Role (Engineering / Design / Faculty / Staff)" value={role} onChange={(e) => setRole(e.target.value)} />
       </div>
 
       <div className="form__actions">
@@ -464,7 +464,7 @@ export default function App() {
       </div>
 
       <footer className="footer">
-        <div>Made with ♥ · Tria UI practice · </div>
+        <div>Made with ♥ · Tria UI practice · <small className="muted">Not for submission where AI is disallowed</small></div>
       </footer>
 
       {/* modals */}
