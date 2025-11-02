@@ -17,7 +17,7 @@ const TRASH_EXPIRE_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 /* ---- utilities ---- */
 function getSampleContacts() {
   const seed = [
-    { id: 1, name: "Aisha Khan", email: "aisha.khan@example.com", country: "+91", phone: "9876543210", role: "Product", photo: "" },
+    { id: 1, name: "Vansh Arora", email: "vansharora665@gmail.com", country: "+91", phone: "9589290528", role: "Engineering", photo: "" },
     { id: 2, name: "Ravi Patel", email: "ravi.patel@example.com", country: "+91", phone: "9123456789", role: "Engineering", photo: "" },
     { id: 3, name: "Emily Johnson", email: "emily.johnson@example.com", country: "+1", phone: "5551234567", role: "Design", photo: "" },
   ];
